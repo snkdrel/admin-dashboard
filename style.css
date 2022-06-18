@@ -17,7 +17,29 @@ body{
     grid-row: 1 / 3;
     background-color: #1aace2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar>* {
+    margin-bottom: 50px;
+}
+
+.dashboard-icon, .sections-container>div, .branding-container>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-icon {
     font-size: 2rem;
+    font-weight: bold;
+}
+
+.sections-container, .branding-container {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* header */
