@@ -70,6 +70,7 @@ body{
     border-radius: 12px;
     background-color: var(--almost-white-color);
     width: 800px;
+    height: 32px;
 }
 
 .upper-header .avatar-icon {
@@ -136,6 +137,15 @@ body{
     padding: 32px;
     box-shadow: -6px 0px 0px 0px #F7BF07;
     border-radius: var(--border-radius-main-content);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
 }
 
 .project-title {
@@ -144,11 +154,13 @@ body{
 }
 
 .project-content {
+    margin-top: 8px;
     margin-bottom: 32px;
 }
 
 .options {
     text-align: end;
+    margin-top: auto;
 }
 
 .options img {
