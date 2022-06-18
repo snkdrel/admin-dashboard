@@ -24,9 +24,21 @@ body{
     grid-row: 1 / 3;
     background-color: var(--blue-color);
     color: var(--white-color);
-    display: flex;
-    flex-direction: column;
     padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 48px 128px;
+    grid-template-rows: repeat(12, 48px);
+    gap: 16px;
+}
+
+.sidebar>* {
+    margin: auto;
+}
+
+.sidebar>:nth-child(2n) {
+    margin-left: 0px;
 }
 
 .sidebar>* {
@@ -39,14 +51,10 @@ body{
     gap: 20px;
 }
 
-.dashboard-icon {
+#dashboard-title{
     font-size: 2rem;
     font-weight: bold;
-}
-
-.sections-container, .branding-container {
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding-top: 6px;
 }
 
 /* header */
@@ -118,7 +126,7 @@ body{
     gap: 32px;
     background-color: var(--almost-white-color);
     padding: 32px;
-    margin-top: -160px;
+    margin-top: -100px;
 }
 
 .main-content .title {
